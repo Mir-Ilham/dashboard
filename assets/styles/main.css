@@ -51,6 +51,7 @@ table {
 
 :root * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     border: 1px solid red;
 }
 
@@ -65,7 +66,7 @@ table {
 }
 
 aside {
-    background-color: aqua;
+    background-color: lightskyblue;
     grid-column: 1 / 2;
     grid-row: 1 / 10;
 }
@@ -80,4 +81,92 @@ main {
     background-color: antiquewhite;
     grid-column: 2 / 8;
     grid-row: 2 / 10;
+}
+
+/* || Sidebar */
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: auto;
+    height: 80px;
+}
+
+.logo p {
+    flex-grow: 1;
+    padding-left: 10px;
+    line-height: 3.2;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+aside li {
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav2 {
+    margin-top: 50px;
+}
+
+.nav_icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}
+
+.home {
+    background: url(../icons/home.png) no-repeat center;
+}
+
+.profile {
+    background: url(../icons/profile.png) no-repeat center;
+}
+
+.messages {
+    background: url(../icons/messages.png) no-repeat center;
+}
+
+.history {
+    background: url(../icons/history.png) no-repeat center;
+}
+
+.tasks {
+    background: url(../icons/tasks.png) no-repeat center;
+}
+
+.communities {
+    background: url(../icons/communities.png) no-repeat center;
+}
+
+.settings {
+    background: url(../icons/settings.png) no-repeat center;
+}
+
+.support {
+    background: url(../icons/support.png) no-repeat center;
+}
+
+.privacy {
+    background: url(../icons/privacy.png) no-repeat center;
 }
