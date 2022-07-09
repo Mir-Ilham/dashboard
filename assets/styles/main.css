@@ -103,6 +103,8 @@ header {
     background-color: blue;
     grid-column: 4 / 6;
     grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
 }
 
 .profile_info {
@@ -121,14 +123,16 @@ header {
 
 input[type="search"] {
     width: 70%;
-    margin-left: 20px;
+    margin-left: 15px;
     border-radius: 20px;
 }
 
-.search_ui .search_icon {
-    width: 36px;
-    height: 36px;
-    margin-left: 50px;
+/* || Notification UI */
+
+.user_name {
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* || Sidebar */
@@ -223,4 +227,21 @@ aside li {
 
 .search_icon {
     background: url(../icons/search.png) no-repeat center;
+    width: 36px;
+    height: 36px;
+    margin-left: 50px;
+}
+
+.notification_icon {
+    background: url(../icons/notification.png) no-repeat center;
+    width: 24px;
+    height: 24px;
+    margin-left: 80px; 
+}
+
+.profile_icon {
+    margin-left: 25px; 
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; 
 }
