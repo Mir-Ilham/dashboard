@@ -83,6 +83,54 @@ main {
     grid-row: 2 / 10;
 }
 
+/* || Header layout */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.search_ui {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: aqua;
+    padding: 20px 10px;
+    display: flex;
+}
+
+.notification_ui {
+    background-color: blue;
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+}
+
+.profile_info {
+    background-color: aquamarine;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+}
+
+.header-btns {
+    background-color: gray;
+    grid-column: 4 / 6;
+    grid-row: 2 / 4;
+}
+
+/* || Search UI */
+
+input[type="search"] {
+    width: 70%;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.search_ui .search_icon {
+    width: 36px;
+    height: 36px;
+    margin-left: 50px;
+}
+
 /* || Sidebar */
 
 .logo {
@@ -135,6 +183,8 @@ aside li {
     width: 24px;
 }
 
+/* || Icons */
+
 .home {
     background: url(../icons/home.png) no-repeat center;
 }
@@ -169,4 +219,8 @@ aside li {
 
 .privacy {
     background: url(../icons/privacy.png) no-repeat center;
+}
+
+.search_icon {
+    background: url(../icons/search.png) no-repeat center;
 }
