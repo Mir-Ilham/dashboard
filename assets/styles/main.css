@@ -88,7 +88,7 @@ main {
 header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .search_ui {
@@ -110,13 +110,16 @@ header {
 .profile_info {
     background-color: aquamarine;
     grid-column: 1 / 4;
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
 }
 
 .header-btns {
     background-color: gray;
     grid-column: 4 / 6;
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* || Search UI */
@@ -131,8 +134,21 @@ input[type="search"] {
 
 .user_name {
     margin-left: 30px;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 500;
+}
+
+/* || Header buttons */
+
+.btn {
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.header-btns button:nth-child(2) {
+    margin: 0 20px;
 }
 
 /* || Sidebar */
