@@ -52,7 +52,7 @@ table {
 :root * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* || Layout */
@@ -112,6 +112,8 @@ header {
     background-color: aquamarine;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
 }
 
 .header-btns {
@@ -127,7 +129,6 @@ header {
 
 input[type="search"] {
     width: 70%;
-    margin-left: 15px;
     border-radius: 20px;
 }
 
@@ -149,6 +150,19 @@ input[type="search"] {
 
 .header-btns button:nth-child(2) {
     margin: 0 20px;
+}
+
+/* || Profile Info */
+
+.greeting {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.display_name {
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 /* || Sidebar */
@@ -246,6 +260,7 @@ aside li {
     width: 36px;
     height: 36px;
     margin-left: 50px;
+    margin-right: 15px;
 }
 
 .notification_icon {
@@ -259,5 +274,15 @@ aside li {
     margin: 0 25px; 
     width: 36px;
     height: 36px;
-    border-radius: 50%; 
+    border-radius: 50%;
+    background-color: blanchedalmond;
+}
+
+.dp {
+    width: 64px;
+    height: 64px;
+    margin-left: 50px;
+    margin-right: 15px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
 }
